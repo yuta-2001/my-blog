@@ -23,7 +23,7 @@ export default function Home() {
             acceleration: 1.00,
             brightness: {
               min: 4,
-              max: 95
+              max: 90
             },
             decay: {
               min: 0.013,
@@ -33,9 +33,9 @@ export default function Home() {
               min: 24.52,
               max: 55.00
             },
-            explosion: 4,
+            explosion: 3,
             flickering: 40.00,
-            intensity: 6.00,
+            intensity: 5.00,
             friction: 0.96,
             gravity: 1.52,
             opacity: 0.1,

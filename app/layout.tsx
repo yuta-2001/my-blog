@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="fixed top-0 left-0 right-0 flex justify-end items-center p-8 z-50">
+        <header className="fixed top-0 left-0 right-0 flex justify-end items-center p-8 z-50 font-sans">
           <nav className="text-white flex items-center space-x-6 mr-10">
             <Link href="/" className="hover:text-gray-300 text-2xl text-white transition duration-300 ease-in-out font-semibold">
               HOME
