@@ -7,9 +7,9 @@ export default function Home() {
     <>
       <div className="w-screen h-screen  text-white relative z-20 bg-black bg-opacity-30">
         <div className="p-4 md:p-8 flex flex-col h-full items-center justify-center">
-          <h2 className="text-white font-bold mb-8 text-9xl">
+          <h1 className="text-white font-bold mb-8 text-9xl tracking-wide">
             Engineering Blog
-          </h2>
+          </h1>
           <div className={`${styles.outlinedText} text-3xl md:text-5xl font-bold p-2`}>
             Yuta Sugimine / Yokohama City Univ.
           </div>
