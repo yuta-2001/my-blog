@@ -41,7 +41,7 @@ export default function Home() {
             opacity: 0.1,
             particles: 103,
             traceLength: 5.70,
-            traceSpeed: 23,
+            traceSpeed: 10,
             rocketsPoint: {
               min: 0,
               max: 100
@@ -60,7 +60,7 @@ export default function Home() {
             mouse: {
               click: true,
               move: false,
-              max: 3
+              max: 2
             }
           }}
           style={{
