@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
+import { IoFootball } from "react-icons/io5";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,21 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="fixed top-0 left-0 right-0 flex justify-end items-center p-8 z-50 font-sans">
-          <nav className="text-white flex items-center space-x-6 mr-10">
-            <Link href="/" className="hover:text-gray-300 text-2xl text-white transition duration-300 ease-in-out font-semibold">
-              HOME
+        <header className="text-gray-600 body-font absolute z-50">
+          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <IoFootball className="text-4xl text-blue-300" />
+              <span className="ml-3 text-2xl text-white">MINE BLOG</span>
             </Link>
-            <Link href="/profile" className="hover:text-gray-300 text-2xl text-white transition duration-300 ease-in-out font-semibold">
-              PROFILE
-            </Link>
-            <Link href="/works" className="hover:text-gray-300 text-2xl text-white transition duration-300 ease-in-out font-semibold">
-              WORKS
-            </Link>
-            <Link href="/blogs" className="hover:text-gray-300 text-2xl text-white transition duration-300 ease-in-out font-semibold">
-              BLOGS
-            </Link>
-          </nav>
+            <nav className="md:mr-auto md:ml-6 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+              <Link href="/profile" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">PROFILE</Link>
+              <Link href="/works" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">WORKS</Link>
+              <Link href="/blogs" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">BLOGS</Link>
+            </nav>
+          </div>
         </header>
         {children}
       </body>
