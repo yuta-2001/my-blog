@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
-import { IoFootball } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
+import { IoIosApps } from "react-icons/io";
+import { FaBlog } from "react-icons/fa";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,16 +22,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="text-gray-600 body-font absolute z-50">
-          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <IoFootball className="text-4xl text-blue-300" />
-              <span className="ml-3 text-2xl text-white">MINE BLOG</span>
-            </Link>
-            <nav className="md:mr-auto md:ml-6 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-              <Link href="/profile" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">PROFILE</Link>
-              <Link href="/works" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">WORKS</Link>
-              <Link href="/blogs" className="mr-5 hover:text-gray-300 text-xl text-white transition duration-300 ease-in-out font-medium">BLOGS</Link>
+        <header className="text-gray-600 body-font fixed z-50 bg-white top-4 left-4 rounded-full shadow-md">
+          <div className="container mx-auto flex flex-wrap px-5 py-3 flex-col md:flex-row items-center">
+            <nav className="md:mr-auto md:ml-6 md:py-1 flex flex-wrap items-center text-base justify-center">
+              <Link href="/" className="mr-5 hover:text-gray-900 text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
+                <IoHome className="w-4 h-4 mr-2" />
+                HOME
+              </Link>
+              <Link href="/profile" className="mr-5 hover:text-gray-900 text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
+                <CgProfile className="w-4 h-4 mr-2" />
+                PROFILE
+              </Link>
+              <Link href="/works" className="mr-5 hover:text-gray-900 text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
+                <IoIosApps className="w-4 h-4 mr-2" />
+                WORKS
+              </Link>
+              <Link href="/blogs" className="mr-5 hover:text-gray-900 text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
+                <FaBlog className="w-4 h-4 mr-2" />
+                BLOGS
+              </Link>
             </nav>
           </div>
         </header>
