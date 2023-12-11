@@ -1,0 +1,6 @@
+.outlinedText {
+    color: black;
+    background-color: transparent;
+    -webkit-text-stroke: 1px white; /* 文字の枠線を白く設定 */
+    text-stroke: 1px white;
+}
