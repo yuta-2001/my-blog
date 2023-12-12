@@ -1,10 +1,7 @@
-import { fetchQuiitaItems } from '../../utils/fetch-data';
+import { fetchQiitaItemsFromPrisma } from '../../utils/fetch-data';
 
 export default async function BlogPage() {
-  // cronで回して定期的に投稿のidとそれに紐づくページのOGPを取得しておく
-  // それらはDBに保存し、ここではidと一致するものをDBから取得する
-  // idが増えていればinsert, idが減っていればdelete
-  const items = await fetchQuiitaItems();
+  const items = await fetchQiitaItemsFromPrisma();
 
   return (
     <main className="w-full bg-black text-white p-32 min-h-screen">
@@ -21,10 +18,16 @@ export default async function BlogPage() {
               {items.map((item: any) => (
                 <a href={item.url} target="_blank" rel="noopener" className="md:w-1/2 p-4 flex">
                   <div className="bg-gray-100 p-4 rounded-lg flex-grow relative transition duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg">
-                    <img className="h-auto rounded w-full object-cover object-center mb-2" src='/images/qiita.png' alt="content" />
+                    {
+                      item.og_url ? (
+                        <img className="h-auto rounded w-full object-cover object-center mb-2" src={item.og_url} alt="content" />
+                      ) : (
+                        <img className="h-auto rounded w-full object-cover object-center mb-2" src='/images/qiita.png' alt="content" />
+                      )
+                    }
                     <ul>
                       {item.tags.slice(0, 3).map((tag: any) => (
-                        <li className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{tag.name}</li>
+                        <li className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{tag}</li>
                       ))}
                     </ul>
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.title}</h2>
