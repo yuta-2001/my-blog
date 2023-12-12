@@ -1,4 +1,8 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
+import { fetchWorkItems } from "../../utils/fetch-data";
+
+export default async function Layout({ children }: { children: React.ReactNode }) {
+  const items = await fetchWorkItems();
+
   return (
     <>
       {children}

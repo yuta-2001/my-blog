@@ -1,4 +1,5 @@
 import { fetchWorkItems } from "../../utils/fetch-data";
+import Link from "next/link";
 
 export default async function WorksPage() {
   const items = await fetchWorkItems();
@@ -16,7 +17,7 @@ export default async function WorksPage() {
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-wrap -m-4">
               {items.map((item: any) => (
-                <a href={item.url} target="_blank" rel="noopener" className="md:w-1/2 p-4 flex">
+                <Link href={`/works/${item.id}`} className="md:w-1/2 p-4 flex">
                   <div className="bg-gray-100 p-4 rounded-lg flex-grow relative transition duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg">
                     <img className="h-auto rounded w-full object-cover object-center mb-2" src={item.img.url} alt="content" />
                     <ul>
@@ -26,7 +27,7 @@ export default async function WorksPage() {
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.name}</h2>
                     <p className="absolute bottom-2 right-2 text-sm">{new Date(item.publishedAt).toLocaleDateString()}</p>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

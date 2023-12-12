@@ -13,7 +13,19 @@ export const fetchQuiitaItems = async () => {
 }
 
 export const fetchWorkItems = async () => {
-  const data = await microCmsClient.get({ endpoint: 'works' });
+  const data = await microCmsClient.get({
+    endpoint: 'works',
+    queries: {
+      fields: ['id', 'img', 'category', 'name', 'publishedAt'],
+      orders: '-publishedAt',
+    }
+  });
 
   return data.contents;
+}
+
+export const fetchWorkItem = async (id: string) => {
+  const data = await microCmsClient.get({ endpoint: 'works', contentId: id });
+
+  return data;
 }
