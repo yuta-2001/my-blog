@@ -1,16 +1,9 @@
-const fetchQuiitaItems = async () => {
-  const res = await fetch('https://qiita.com/api/v2/authenticated_user/items?per_page=100', {
-    headers: {
-      'Authorization': `Bearer ${process.env.QIITA_ACCESS_TOKEN}`
-    }
-  });
-
-  const data = await res.json();
-
-  return data;
-}
+import { fetchQuiitaItems } from '../../utils/fetch-data';
 
 export default async function BlogPage() {
+  // cronで回して定期的に投稿のidとそれに紐づくページのOGPを取得しておく
+  // それらはDBに保存し、ここではidと一致するものをDBから取得する
+  // idが増えていればinsert, idが減っていればdelete
   const items = await fetchQuiitaItems();
 
   return (
@@ -19,6 +12,9 @@ export default async function BlogPage() {
         <h1 className="text-5xl font-bold tracking-wide mb-6">
           Blogs
         </h1>
+        <p>
+          Introduce my technical blogs.
+        </p>
         <section className="text-gray-600 body-font">
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-wrap -m-4">
@@ -31,7 +27,7 @@ export default async function BlogPage() {
                         <li className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{tag.name}</li>
                       ))}
                     </ul>
-                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">TITLE</h3>
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.title}</h2>
                     <p className="absolute bottom-2 right-2 text-sm">{new Date(item.created_at).toLocaleDateString()}</p>
                   </div>
