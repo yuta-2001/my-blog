@@ -23,7 +23,6 @@ export default async function WorksPage() {
                     <ul>
                       <li className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{item.category.name}</li>
                     </ul>
-                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">TITLE</h3>
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.name}</h2>
                     <p className="absolute bottom-2 right-2 text-sm">{new Date(item.publishedAt).toLocaleDateString()}</p>
                   </div>
