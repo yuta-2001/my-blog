@@ -1,4 +1,5 @@
 import { microCmsClient } from "./cms-client";
+import { PrismaClient } from "@prisma/client";
 
 export const fetchQuiitaItems = async () => {
   const res = await fetch('https://qiita.com/api/v2/authenticated_user/items?per_page=100', {
@@ -11,6 +12,13 @@ export const fetchQuiitaItems = async () => {
 
   return data;
 }
+
+export const fetchQiitaItemsFromPrisma = async () => {
+  const prisma = new PrismaClient();
+  const items = await prisma.blog.findMany();
+  return items;
+}
+
 
 export const fetchWorkItems = async () => {
   const data = await microCmsClient.get({
