@@ -4,8 +4,8 @@ export default async function BlogPage() {
   const items = await fetchQiitaItemsFromPrisma();
 
   return (
-    <main className="w-full bg-black text-white p-32 min-h-screen">
-      <div className="w-3/4 mx-auto">
+    <main className="w-full bg-black text-white py-32 min-h-screen">
+      <div className="w-4/5 lg:w-3/5 max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold tracking-wide mb-6">
           Blogs
         </h1>
@@ -13,7 +13,7 @@ export default async function BlogPage() {
           Introduce my technical blogs.
         </p>
         <section className="text-gray-600 body-font">
-          <div className="container px-5 pt-12 mx-auto">
+          <div className="container pt-12 mx-auto">
             <div className="flex flex-wrap -m-4">
               {items.map((item: any) => (
                 <a key={item.id} href={item.url} target="_blank" rel="noopener" className="md:w-1/2 p-4 flex">
@@ -27,7 +27,7 @@ export default async function BlogPage() {
                     }
                     <ul>
                       {item.tags.slice(0, 3).map((tag: any) => (
-                        <li className="inline-block bg-green-500 rounded-full px-2 py-1 text-xs font-medium text-white mr-1 mb-2">{tag}</li>
+                        <li key={tag} className="inline-block bg-green-500 rounded-full px-2 py-1 text-xs font-medium text-white mr-1 mb-2">{tag}</li>
                       ))}
                     </ul>
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.title}</h2>
