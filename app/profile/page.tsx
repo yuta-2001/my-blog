@@ -5,8 +5,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function ProfilePage() {
   return (
-    <main className="w-full bg-black text-white p-32 min-h-screen">
-      <div className="w-3/4 mx-auto">
+    <main className="w-full bg-black text-white py-24 md:py-32 min-h-screen">
+      <div className="w-11/12 lg:w-2/3 lg:max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold tracking-wide mb-6">
           Profile
         </h1>
