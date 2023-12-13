@@ -27,7 +27,7 @@ export default async function BlogPage() {
                     }
                     <ul>
                       {item.tags.slice(0, 3).map((tag: any) => (
-                        <li className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1 mb-2">{tag}</li>
+                        <li className="inline-block bg-green-500 rounded-full px-2 py-1 text-xs font-medium text-white mr-1 mb-2">{tag}</li>
                       ))}
                     </ul>
                     <h2 className="text-md text-gray-900 font-medium title-font mb-4">{item.title}</h2>
