@@ -16,7 +16,7 @@ export default async function BlogPage() {
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-wrap -m-4">
               {items.map((item: any) => (
-                <a href={item.url} target="_blank" rel="noopener" className="md:w-1/2 p-4 flex">
+                <a key={item.id} href={item.url} target="_blank" rel="noopener" className="md:w-1/2 p-4 flex">
                   <div className="bg-gray-100 p-4 rounded-lg flex-grow relative transition duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg">
                     {
                       item.og_url ? (
