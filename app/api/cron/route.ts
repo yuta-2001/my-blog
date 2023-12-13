@@ -1,29 +1,16 @@
 import { fetchQuiitaItems } from '@/utils/fetch-data';
 import { PrismaClient } from '@prisma/client';
 import puppeteer from "puppeteer";
+import { NextResponse } from 'next/server';
 
 const prisma = new PrismaClient();
+export const dynamic = 'force-dynamic'
 
 export async function GET() {
 
   // Qiitaの記事を取得
   const items = await fetchQuiitaItems();
   const storedItems = await prisma.blog.findMany();
-
-  // urlを元に、meta OG imageを取得
-  async function getMetaOgImage(url: string) {
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage()
-
-    await page.goto(url)
-    const ogImage = await page.$eval('meta[property="og:image"]', (element) => {
-      return element.getAttribute('content')
-    })
-
-    await browser.close()
-
-    return ogImage;
-  }
 
   // itemのurlを元に、スクレイピングを行い、meta OG imageを取得
   await Promise.all(items.map(async (item: any) => {
@@ -78,7 +65,24 @@ export async function GET() {
     }
   })
 
-  return Response.json({ 
+  return NextResponse.json({ 
     message: 'success',
   });
 }
+
+
+// urlを元に、meta OG imageを取得
+async function getMetaOgImage(url: string) {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+
+  await page.goto(url)
+  const ogImage = await page.$eval('meta[property="og:image"]', (element) => {
+    return element.getAttribute('content')
+  })
+
+  await browser.close()
+
+  return ogImage;
+}
+
