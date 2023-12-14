@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const siteName = "Yuta's Profile Site"
 const description = '大学生エンジニアをしているYutaです。こちらのサイトではこれまでの経歴や技術ブログ、スキルセットなどについてまとめております。'
-const url = 'https://my-blog-yuta-2001.vercel.app/'
+const url = process.env.SITE_URL
 
 export const metadata: Metadata = {
   title: {
