@@ -1,11 +1,12 @@
 import { FaLaravel, FaPython, FaReact, FaGitAlt, FaGithub, FaDocker, FaLine } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { SiTypescript, SiMysql, SiMongodb, SiElastic } from "react-icons/si";
+import { SiTypescript, SiMysql, SiMongodb, SiElastic, SiQiita, SiWantedly } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function ProfilePage() {
   return (
-    <main className="w-full bg-black text-white py-24 md:py-32 min-h-screen">
+    <main className="w-full bg-black text-white py-24 pt-32 md:py-32 min-h-screen">
       <div className="w-11/12 lg:w-2/3 lg:max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold tracking-wide mb-6">
           Profile
@@ -13,13 +14,35 @@ export default function ProfilePage() {
         <section className="flex flex-wrap md:flex-nowrap items-center bg-black text-white py-8">
           <div className="w-full md:w-1/2 p-2">
             <h2 className="text-3xl font-bold mb-4">Basic Information</h2>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside mb-4">
               <li>Name: Yuta Sugimine</li>
               <li>Hometown: Tokyo / Fuchu</li>
               <li>Age: 21</li>
               <li>University: Yokohama City University</li>
               <li>Major: International Economics (Accounting)</li>
               <li>Hobbies: Football</li>
+            </ul>
+            <ul className="flex items-center">
+              <li className="mr-4">
+                <a className="cursor-pointer" href={process.env.GITHUB_URL} target="_blank" rel="noopener">
+                  <FaGithub className="w-8 h-8" />
+                </a>
+              </li>
+              <li className="mr-4">
+                <a className="cursor-pointer" href={process.env.TWITTER_URL} target="_blank" rel="noopener">
+                  <FaSquareXTwitter className="w-8 h-8" />
+                </a>
+              </li>
+              <li className="mr-4">
+                <a className="cursor-pointer" href={process.env.QIITA_URL} target="_blank" rel="noopener">
+                  <SiQiita className="w-8 h-8" />
+                </a>
+              </li>
+              <li className="">
+                <a className="cursor-pointer" href={process.env.WANTEDLY_URL} target="_blank" rel="noopener">
+                  <SiWantedly className="w-8 h-8" />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 flex justify-start items-center mb-4 md:mb-0 p-2">
