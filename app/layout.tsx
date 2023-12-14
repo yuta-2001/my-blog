@@ -48,7 +48,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className="text-gray-600 body-font fixed z-50 bg-white top-4 -translate-x-1/2 md:translate-x-0 left-1/2 md:left-4 rounded-full shadow-md">
-          <div className="container mx-auto flex px-3 md:px-5 py-3 flex-col md:flex-row items-center">
+          <div className="container mx-auto flex px-5 py-3 flex-col md:flex-row items-center">
             <nav className="md:mr-auto md:ml-6 md:py-1 flex items-center text-base justify-center">
               <Link href="/" className="mr-2 md:mr-5 hover:text-gray-900 text-md md:text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
                 <IoHome className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
@@ -62,7 +62,7 @@ export default function RootLayout({
                 <IoIosApps className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                 WORKS
               </Link>
-              <Link href="/blogs" className="mr-2 md:mr-5 hover:text-gray-900 text-md md:text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
+              <Link href="/blogs" className="md:mr-5 hover:text-gray-900 text-md md:text-xl text-black transition duration-300 ease-in-out font-semibold flex items-center">
                 <FaBlog className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                 BLOGS
               </Link>
