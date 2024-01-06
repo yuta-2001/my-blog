@@ -1,4 +1,4 @@
-import { FaLaravel, FaPython, FaReact, FaGitAlt, FaGithub, FaDocker, FaLine } from "react-icons/fa";
+import { FaLaravel, FaPython, FaReact, FaGitAlt, FaGithub, FaDocker, FaLine, FaAws } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTypescript, SiMysql, SiMongodb, SiElastic, SiQiita, SiWantedly } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -84,6 +84,7 @@ export default function ProfilePage() {
                 <p className="flex items-center mb-2"><FaGitAlt className="text-orange-600 text-2xl mr-2" /> Git</p>
                 <p className="flex items-center mb-2"><FaGithub className="text-gray-60 text-2xl mr-2" /> GitHub</p>
                 <p className="flex items-center mb-2"><FaDocker className="text-blue-600 text-2xl mr-2" /> Docker</p>
+                <p className="flex items-center mb-2"><FaAws className="text-orange-600 text-2xl mr-2" /> AWS (Lambda, EC2)</p>
                 <p className="flex items-center mb-2"><FaLine className="text-green-600 text-2xl mr-2" /> Line Messaging API・Line Frontend Framework</p>
                 <p className="flex items-center"><IoLogoFirebase className="text-orange-500 text-2xl mr-2" /> Firebase etc...</p>
               </div>

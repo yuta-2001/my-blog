@@ -4,9 +4,9 @@
 // import { NextResponse } from 'next/server';
 
 // const prisma = new PrismaClient();
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
-export async function GET() {
+// export async function GET() {
 
 //   // Qiitaの記事を取得
 //   const items = await fetchQuiitaItems();
@@ -82,5 +82,5 @@ export async function GET() {
 //   await browser.close()
 
 //   return ogImage;
-}
+// }
 
