@@ -1,8 +1,8 @@
 import { FaLaravel, FaPython, FaReact, FaGitAlt, FaGithub, FaDocker, FaLine, FaAws } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { SiTypescript, SiMysql, SiMongodb, SiElastic, SiQiita, SiWantedly } from "react-icons/si";
+import { SiTypescript, SiMysql, SiMongodb, SiElastic, SiQiita, SiWantedly, SiRedis } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaGolang } from "react-icons/fa6";
 
 export default function ProfilePage() {
   return (
@@ -64,7 +64,8 @@ export default function ProfilePage() {
               <div>
                 <h3 className="text-2xl font-semibold mb-2">Server-Side Languages</h3>
                 <p className="flex items-center mb-2"><FaLaravel className="text-red-600 text-2xl mr-2" /> PHP (Laravel)</p>
-                <p className="flex items-center"><FaPython className="text-blue-600 text-2xl mr-2" /> Python (FastAPI)</p>
+                <p className="flex items-center mb-2"><FaPython className="text-blue-600 text-2xl mr-2" /> Python (FastAPI)</p>
+                <p className="flex items-center"><FaGolang className="text-blue-600 text-2xl mr-2" /> Golang</p>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold mb-2">Client-Side Languages</h3>
@@ -78,6 +79,7 @@ export default function ProfilePage() {
                 <p className="flex items-center mb-2"><SiMysql className="text-blue-700 text-2xl mr-2" /> MySQL</p>
                 <p className="flex items-center mb-2"><SiMongodb className="text-green-500 text-2xl mr-2" /> MongoDB</p>
                 <p className="flex items-center mb-2"><SiElastic className="text-yellow-600 text-2xl mr-2" /> Elasticsearch</p>
+                <p className="flex items-center mb-2"><SiRedis className="text-red-600 text-2xl mr-2" /> Redis</p>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold mb-2">Others</h3>
@@ -101,7 +103,7 @@ export default function ProfilePage() {
             <h3 className="text-2xl font-semibold mb-4">Long-term Internships</h3>
             <ul className="list-disc list-inside mb-6">
               <li className="mb-4">
-                <span>2022年2月 - 2022年9月: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社EISHIN</a>でWEBサイト制作・サーバーサイド開発の長期インターンシップに参加</span>
+                <span>2022年2月 - 2023年9月, 2023年2月 - 現在: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社EISHIN</a>でWEBサイト制作・サーバーサイド開発の長期インターンシップに参加</span>
                 <ul className="list-circle list-inside ml-6 mt-2">
                   <li><a href="https://www.bsearch.co.jp/recruit/3066/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">採用CXクラウド</a>設計〜開発 (PHP, Laravel)</li>
                   <li><a href="https://good-for-job.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Good For Job</a>保守・運用 (PHP, Laravel)</li>
@@ -109,12 +111,15 @@ export default function ProfilePage() {
                 </ul>
               </li>
 
-              <li>
+              <li className="mb-4">
                 <span>2023年7月 - 2024年1月: <a href="https://codecomplete.jp/ja/home/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社CodeComplete</a>でサーバーサイド・クライアントサイド開発の長期海外インターンシップに参加</span>
                 <ul className="list-circle list-inside ml-6 mt-2">
                   <li>医療系サービス<a href="https://bedycle.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Bedycle</a>保守・運用 (PHP, Laravel, TypeScript, React.js)</li>
                   <li>仮想通貨取引bot<a href="https://twitter.com/FluidToken?s=20" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Fluid GMX BOT</a>のサーバーサイド開発 (Python)</li>
                 </ul>
+              </li>
+              <li>
+                <span>2023年3月 - 現在: <a href="" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社Nobest</a>でサーバーサイド・クライアントサイド開発</span>
               </li>
             </ul>
             <h3 className="text-2xl font-semibold mb-4">Short-term Internships</h3>
