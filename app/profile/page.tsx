@@ -16,8 +16,8 @@ export default function ProfilePage() {
             <h2 className="text-3xl font-bold mb-4">Basic Information</h2>
             <ul className="list-disc list-inside mb-4">
               <li>Name: Yuta Sugimine</li>
-              <li>Hometown: Tokyo / Fuchu</li>
-              <li>Age: 21</li>
+              <li>Hometown: Tokyo</li>
+              <li>Age: 22</li>
               <li>University: Yokohama City University</li>
               <li>Major: International Economics (Accounting)</li>
               <li>Hobbies: Football</li>
@@ -100,31 +100,51 @@ export default function ProfilePage() {
             <h2 className="text-3xl font-bold tracking-wide mb-6">
               Work Experience
             </h2>
-            <h3 className="text-2xl font-semibold mb-4">Long-term Internships</h3>
-            <ul className="list-disc list-inside mb-6">
-              <li className="mb-4">
-                <span>2022年2月 - 2023年9月, 2023年2月 - 現在: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社EISHIN</a>でWEBサイト制作・サーバーサイド開発の長期インターンシップに参加</span>
-                <ul className="list-circle list-inside ml-6 mt-2">
-                  <li><a href="https://www.bsearch.co.jp/recruit/3066/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">採用CXクラウド</a>設計〜開発 (PHP, Laravel)</li>
-                  <li><a href="https://good-for-job.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Good For Job</a>保守・運用 (PHP, Laravel)</li>
-                  <li><a href="https://lp.rakuraku-karte.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">らくらくカルテ</a>保守・運用 (PHP, Laravel)</li>
-                </ul>
+            <ul className="list-disc list-inside space-y-4 text-white">
+              <li className="flex items-start space-x-4">
+                <div className="text-blue-500">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span>2022.2 - 2023.9, 2024.2 - 2024.6: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">EISHIN.inc</a></span>
+                  <p className="text-gray-300">Web site coder and Server-Side Developer.(Long-term internship)</p>
+                </div>
               </li>
-
-              <li className="mb-4">
-                <span>2023年7月 - 2024年1月: <a href="https://codecomplete.jp/ja/home/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社CodeComplete</a>でサーバーサイド・クライアントサイド開発の長期海外インターンシップに参加</span>
-                <ul className="list-circle list-inside ml-6 mt-2">
-                  <li>医療系サービス<a href="https://bedycle.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Bedycle</a>保守・運用 (PHP, Laravel, TypeScript, React.js)</li>
-                  <li>仮想通貨取引bot<a href="https://twitter.com/FluidToken?s=20" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Fluid GMX BOT</a>のサーバーサイド開発 (Python)</li>
-                </ul>
+              <li className="flex items-start space-x-4">
+                <div className="text-blue-500">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span>2023.7 - 2024.1: <a href="https://codecomplete.jp/ja/home/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">CodeComplete.inc</a></span>
+                  <p className="text-gray-300">Server-Side and Client-Side Developer.(Long-term internship in Vietnam)</p>
+                </div>
               </li>
-              <li>
-                <span>2023年3月 - 現在: <a href="" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">株式会社Nobest</a>でサーバーサイド・クライアントサイド開発</span>
+              <li className="flex items-start space-x-4">
+                <div className="text-blue-500">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span>2024.3 - 2024.5: <a href="https://nobest.jp/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Nobest.inc</a></span>
+                  <p className="text-gray-300">Client-Side Developer.(Outsourcing)</p>
+                </div>
               </li>
-            </ul>
-            <h3 className="text-2xl font-semibold mb-4">Short-term Internships</h3>
-            <ul className="list-disc list-inside">
-              <li>株式会社バンダイナムコスタジオ: Goでゲームサーバーを作るワークショップ(1 day)に参加</li>
+              <li className="flex items-start space-x-4">
+                <div className="text-blue-500">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span>2024.7 - current: <a href="https://www.hacomono.jp/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">hacomono.inc</a></span>
+                  <p className="text-gray-300">SRE Engineer.(Long-term internship)</p>
+                </div>
+              </li>
             </ul>
           </div>
         </section>

@@ -7,7 +7,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
     <>
       {children}
       <footer className="text-center p-12 text-lg">
-        &copy;2023 Yuta Sugimine
+        &copy;2024 Yuta Sugimine
       </footer>
     </>
   );
