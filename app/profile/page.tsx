@@ -1,7 +1,7 @@
 import { FaLaravel, FaPython, FaReact, FaGitAlt, FaGithub, FaDocker, FaLine, FaAws } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTypescript, SiMysql, SiMongodb, SiElastic, SiQiita, SiWantedly, SiRedis } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTerraform } from "react-icons/tb";
 import { FaSquareXTwitter, FaGolang } from "react-icons/fa6";
 
 export default function ProfilePage() {
@@ -86,7 +86,8 @@ export default function ProfilePage() {
                 <p className="flex items-center mb-2"><FaGitAlt className="text-orange-600 text-2xl mr-2" /> Git</p>
                 <p className="flex items-center mb-2"><FaGithub className="text-gray-60 text-2xl mr-2" /> GitHub</p>
                 <p className="flex items-center mb-2"><FaDocker className="text-blue-600 text-2xl mr-2" /> Docker</p>
-                <p className="flex items-center mb-2"><FaAws className="text-orange-600 text-2xl mr-2" /> AWS (Lambda, EC2)</p>
+                <p className="flex items-center mb-2"><FaAws className="text-orange-600 text-2xl mr-2" /> AWS (Lambda, EC2, SAM)</p>
+                <p className="flex items-center mb-2"><TbBrandTerraform className="text-purple-500 text-2xl mr-2" /> Terraform</p>
                 <p className="flex items-center mb-2"><FaLine className="text-green-600 text-2xl mr-2" /> Line Messaging API・Line Frontend Framework</p>
                 <p className="flex items-center"><IoLogoFirebase className="text-orange-500 text-2xl mr-2" /> Firebase etc...</p>
               </div>
@@ -108,19 +109,11 @@ export default function ProfilePage() {
                   </svg>
                 </div>
                 <div>
-                  <span>2022.2 - 2023.9, 2024.2 - 2024.6: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">EISHIN.inc</a></span>
-                  <p className="text-gray-300">Web site coder and Server-Side Developer.(Long-term internship)</p>
-                </div>
-              </li>
-              <li className="flex items-start space-x-4">
-                <div className="text-blue-500">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <span>2023.7 - 2024.1: <a href="https://codecomplete.jp/ja/home/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">CodeComplete.inc</a></span>
-                  <p className="text-gray-300">Server-Side and Client-Side Developer.(Long-term internship in Vietnam)</p>
+                  <span>2024.7 - current: <a href="https://www.hacomono.jp/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">hacomono.inc</a></span>
+                  <p className="text-gray-300">
+                    A wellness tech startup company based in Shibuya, Tokyo.<br />
+                    Role: SRE Engineer.(Long-term internship)
+                  </p>
                 </div>
               </li>
               <li className="flex items-start space-x-4">
@@ -131,7 +124,10 @@ export default function ProfilePage() {
                 </div>
                 <div>
                   <span>2024.3 - 2024.5: <a href="https://nobest.jp/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">Nobest.inc</a></span>
-                  <p className="text-gray-300">Client-Side Developer.(Outsourcing)</p>
+                  <p className="text-gray-300">
+                    An IoT tech startup company based in Kanagawa.<br />
+                    Role: Client-Side Developer.(Outsourcing)
+                  </p>
                 </div>
               </li>
               <li className="flex items-start space-x-4">
@@ -141,8 +137,25 @@ export default function ProfilePage() {
                   </svg>
                 </div>
                 <div>
-                  <span>2024.7 - current: <a href="https://www.hacomono.jp/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">hacomono.inc</a></span>
-                  <p className="text-gray-300">SRE Engineer.(Long-term internship)</p>
+                  <span>2023.7 - 2024.1: <a href="https://codecomplete.jp/ja/home/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">CodeComplete.inc</a></span>
+                  <p className="text-gray-300">
+                    A web development company based in Tokyo.<br />
+                    Role: Server-Side and Client-Side Developer.(Long-term internship in Vietnam)
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-4">
+                <div className="text-blue-500">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2h2v-2zm0-8H9v6h2V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <span>2022.2 - 2023.9, 2024.2 - 2024.6: <a href="https://ei-shin.com/" target="_blank" rel="noopener" className="text-blue-400 underline hover:text-blue-300">EISHIN.inc</a></span>
+                  <p className="text-gray-300">
+                    HR tech startup company based in Meguro, Tokyo.<br />
+                    Role: Web site coder and Server-Side Developer.(Long-term internship)
+                  </p>
                 </div>
               </li>
             </ul>
