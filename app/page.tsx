@@ -11,7 +11,7 @@ export default function Home() {
             Engineering Blog
           </h1>
           <div className={`${styles.outlinedText} text-3xl md:text-5xl font-bold p-2`}>
-            Yuta Sugimine / Yokohama City Univ.
+            Yuta Sugimine / Software Enginner at CyberAgent.inc
           </div>
         </div>
         <Fireworks
