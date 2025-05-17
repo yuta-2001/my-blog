@@ -13,8 +13,8 @@ export default function ProfilePage() {
         </h1>
         <section className="flex flex-wrap md:flex-nowrap items-start bg-black text-white py-8 relative">
           {/* Profile Image */}
-          <div className="w-full md:w-1/2 flex justify-start items-start mb-8 md:mb-0 p-4">
-            <div className="relative w-full">
+          <div className="w-full md:w-3/5 flex justify-start items-start mb-8 md:mb-0 p-4">
+            <div className="relative w-full max-w-2xl mx-auto">
               <div className="aspect-square overflow-hidden rounded-3xl border-4 border-slate-800 shadow-2xl">
                 <img src="/images/profile.jpg" alt="profile image" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
@@ -25,99 +25,99 @@ export default function ProfilePage() {
           </div>
 
           {/* Profile Information */}
-          <div className="w-full md:w-1/2 p-4 md:pl-12">
-            <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 border border-slate-700 shadow-xl">
-              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+          <div className="w-full md:w-2/5 p-4 md:pl-8">
+            <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 border border-slate-700 shadow-xl">
+              <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
                 Basic Information
               </h2>
               
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
-                  <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3 p-3 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
+                  <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Name</p>
-                    <p className="font-bold text-lg">Yuta Sugimine</p>
+                    <p className="text-xs text-gray-400">Name</p>
+                    <p className="font-bold text-base">Yuta Sugimine</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
-                  <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center space-x-3 p-3 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
+                  <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Location</p>
-                    <p className="font-bold text-lg">Tokyo</p>
+                    <p className="text-xs text-gray-400">Location</p>
+                    <p className="font-bold text-base">Tokyo</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
-                  <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center space-x-3 p-3 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
+                  <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Age</p>
-                    <p className="font-bold text-lg">23</p>
+                    <p className="text-xs text-gray-400">Age</p>
+                    <p className="font-bold text-base">23</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
-                  <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                <div className="flex items-center space-x-3 p-3 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
+                  <div className="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">University</p>
-                    <p className="font-bold text-lg">Yokohama City University</p>
-                    <p className="text-sm text-gray-400">International Economics (Accounting)</p>
+                    <p className="text-xs text-gray-400">Company</p>
+                    <p className="font-bold text-base">CyberAgent, Inc.</p>
+                    <p className="text-xs text-gray-400">AI Business Division</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
-                  <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center space-x-3 p-3 bg-slate-800/50 rounded-xl hover:bg-slate-800/70 transition-all">
+                  <div className="w-10 h-10 bg-red-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Hobbies</p>
-                    <p className="font-bold text-lg">Football</p>
+                    <p className="text-xs text-gray-400">Hobbies</p>
+                    <p className="font-bold text-base">Football</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="mt-8 p-6 bg-slate-800/30 rounded-2xl">
-                <p className="text-sm text-gray-400 mb-4">Connect with me</p>
-                <ul className="flex items-center space-x-6">
+              <div className="mt-4 p-4 bg-slate-800/30 rounded-2xl">
+                <p className="text-xs text-gray-400 mb-3">Connect with me</p>
+                <ul className="flex items-center space-x-4">
                   <li>
                     <a className="cursor-pointer transform hover:scale-110 transition-transform duration-200 block" href={process.env.GITHUB_URL} target="_blank" rel="noopener">
-                      <FaGithub className="w-8 h-8 text-white hover:text-blue-400" />
+                      <FaGithub className="w-6 h-6 text-white hover:text-blue-400" />
                     </a>
                   </li>
                   <li>
                     <a className="cursor-pointer transform hover:scale-110 transition-transform duration-200 block" href={process.env.TWITTER_URL} target="_blank" rel="noopener">
-                      <FaSquareXTwitter className="w-8 h-8 text-white hover:text-blue-400" />
+                      <FaSquareXTwitter className="w-6 h-6 text-white hover:text-blue-400" />
                     </a>
                   </li>
                   <li>
                     <a className="cursor-pointer transform hover:scale-110 transition-transform duration-200 block" href={process.env.QIITA_URL} target="_blank" rel="noopener">
-                      <SiQiita className="w-8 h-8 text-white hover:text-blue-400" />
+                      <SiQiita className="w-6 h-6 text-white hover:text-blue-400" />
                     </a>
                   </li>
                   <li>
                     <a className="cursor-pointer transform hover:scale-110 transition-transform duration-200 block" href={process.env.WANTEDLY_URL} target="_blank" rel="noopener">
-                      <SiWantedly className="w-8 h-8 text-white hover:text-blue-400" />
+                      <SiWantedly className="w-6 h-6 text-white hover:text-blue-400" />
                     </a>
                   </li>
                 </ul>
@@ -335,41 +335,41 @@ export default function ProfilePage() {
               <div className="space-y-16">
                 {/* CyberAgent */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-blue-500 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
                   <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2025 - Present</div>
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2025 - Present</div>
                   </div>
                   <div className="flex-1 pl-8">
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-400 p-8 rounded-lg shadow-xl w-full relative">
-                      <div className="absolute -top-4 left-0 bg-blue-700 text-xs text-white px-3 py-1 rounded-full">Latest Position</div>
+                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full relative border border-slate-700">
+                      <div className="absolute -top-4 left-0 bg-slate-700 text-xs text-white px-3 py-1 rounded-full">Latest Position</div>
                       <h3 className="text-xl font-bold mb-2">CyberAgent.inc</h3>
-                      <p className="text-gray-200 text-sm mb-4">
+                      <p className="text-gray-400 text-sm mb-4">
                         An internet company based in Shibuya, Tokyo, providing diverse services including gaming, advertising, and media.
                       </p>
                       <div className="space-y-4">
-                        <div className="border-l-2 border-blue-300 pl-3">
+                        <div className="border-l-2 border-slate-600 pl-3">
                           <p className="font-semibold flex items-center">
-                            <span className="bg-blue-700 w-2 h-2 rounded-full mr-2"></span>
+                            <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                             AMoAD
-                            <span className="text-sm ml-2 text-blue-200">(2025.5 - Present)</span>
+                            <span className="text-sm ml-2 text-gray-400">(2025.5 - Present)</span>
                           </p>
-                          <p className="text-sm text-gray-300">Server-Side Engineer for advertising ad network service</p>
+                          <p className="text-sm text-gray-400">Server-Side Engineer for advertising ad network service</p>
                         </div>
-                        <div className="border-l-2 border-blue-300 pl-3">
+                        <div className="border-l-2 border-slate-600 pl-3">
                           <p className="font-semibold flex items-center">
-                            <span className="bg-blue-700 w-2 h-2 rounded-full mr-2"></span>
+                            <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                             Dynalyst
-                            <span className="text-sm ml-2 text-blue-200">(2025.2 - 2025.3)</span>
+                            <span className="text-sm ml-2 text-gray-400">(2025.2 - 2025.3)</span>
                           </p>
-                          <p className="text-sm text-gray-300">Server-Side & Infrastructure Engineer for RTB DSP server</p>
+                          <p className="text-sm text-gray-400">Server-Side & Infrastructure Engineer for RTB DSP server</p>
                         </div>
-                        <div className="border-l-2 border-blue-300 pl-3">
+                        <div className="border-l-2 border-slate-600 pl-3">
                           <p className="font-semibold flex items-center">
-                            <span className="bg-blue-700 w-2 h-2 rounded-full mr-2"></span>
+                            <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                             Tapple.inc
-                            <span className="text-sm ml-2 text-blue-200">(2025.1)</span>
+                            <span className="text-sm ml-2 text-gray-400">(2025.1)</span>
                           </p>
-                          <p className="text-sm text-gray-300">Server-Side Engineer for dating matching service</p>
+                          <p className="text-sm text-gray-400">Server-Side Engineer for dating matching service</p>
                         </div>
                       </div>
                     </div>
@@ -378,22 +378,22 @@ export default function ProfilePage() {
 
                 {/* hacomono */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-purple-500 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
                   <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.7 - 2025.3</div>
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.7 - 2025.3</div>
                   </div>
                   <div className="flex-1 pl-8">
-                    <div className="bg-gradient-to-r from-purple-600 to-purple-400 p-8 rounded-lg shadow-xl w-full">
+                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">hacomono.inc</h3>
-                      <p className="text-gray-200 text-sm mb-4">
+                      <p className="text-gray-400 text-sm mb-4">
                         A wellness tech startup company based in Shibuya, Tokyo.
                       </p>
-                      <div className="border-l-2 border-purple-300 pl-3">
+                      <div className="border-l-2 border-slate-600 pl-3">
                         <p className="font-semibold flex items-center">
-                          <span className="bg-purple-700 w-2 h-2 rounded-full mr-2"></span>
+                          <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                           SRE Engineer
                         </p>
-                        <p className="text-sm text-gray-300">Long-term internship</p>
+                        <p className="text-sm text-gray-400">Long-term internship</p>
                       </div>
                     </div>
                   </div>
@@ -401,22 +401,22 @@ export default function ProfilePage() {
 
                 {/* Nobest */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-green-500 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
                   <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.3 - 2024.5</div>
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.3 - 2024.5</div>
                   </div>
                   <div className="flex-1 pl-8">
-                    <div className="bg-gradient-to-r from-green-600 to-green-400 p-8 rounded-lg shadow-xl w-full">
+                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">Nobest.inc</h3>
-                      <p className="text-gray-200 text-sm mb-4">
+                      <p className="text-gray-400 text-sm mb-4">
                         An IoT tech startup company based in Kanagawa.
                       </p>
-                      <div className="border-l-2 border-green-300 pl-3">
+                      <div className="border-l-2 border-slate-600 pl-3">
                         <p className="font-semibold flex items-center">
-                          <span className="bg-green-700 w-2 h-2 rounded-full mr-2"></span>
+                          <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                           Client-Side Developer
                         </p>
-                        <p className="text-sm text-gray-300">Outsourcing</p>
+                        <p className="text-sm text-gray-400">Outsourcing</p>
                       </div>
                     </div>
                   </div>
@@ -424,22 +424,22 @@ export default function ProfilePage() {
 
                 {/* CodeComplete */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-red-500 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
                   <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2023.7 - 2024.1</div>
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2023.7 - 2024.1</div>
                   </div>
                   <div className="flex-1 pl-8">
-                    <div className="bg-gradient-to-r from-red-600 to-red-400 p-8 rounded-lg shadow-xl w-full">
+                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">CodeComplete.inc</h3>
-                      <p className="text-gray-200 text-sm mb-4">
+                      <p className="text-gray-400 text-sm mb-4">
                         A web development company based in Tokyo.
                       </p>
-                      <div className="border-l-2 border-red-300 pl-3">
+                      <div className="border-l-2 border-slate-600 pl-3">
                         <p className="font-semibold flex items-center">
-                          <span className="bg-red-700 w-2 h-2 rounded-full mr-2"></span>
+                          <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                           Server-Side and Client-Side Developer
                         </p>
-                        <p className="text-sm text-gray-300">Long-term internship in Vietnam</p>
+                        <p className="text-sm text-gray-400">Long-term internship in Vietnam</p>
                       </div>
                     </div>
                   </div>
@@ -447,22 +447,22 @@ export default function ProfilePage() {
 
                 {/* EISHIN */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-yellow-500 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
                   <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2022.2 - 2024.6</div>
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2022.2 - 2024.6</div>
                   </div>
                   <div className="flex-1 pl-8">
-                    <div className="bg-gradient-to-r from-yellow-600 to-yellow-400 p-8 rounded-lg shadow-xl w-full">
+                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">EISHIN.inc</h3>
-                      <p className="text-gray-200 text-sm mb-4">
+                      <p className="text-gray-400 text-sm mb-4">
                         HR tech startup company based in Meguro, Tokyo.
                       </p>
-                      <div className="border-l-2 border-yellow-300 pl-3">
+                      <div className="border-l-2 border-slate-600 pl-3">
                         <p className="font-semibold flex items-center">
-                          <span className="bg-yellow-700 w-2 h-2 rounded-full mr-2"></span>
+                          <span className="bg-slate-600 w-2 h-2 rounded-full mr-2"></span>
                           Web site coder and Server-Side Developer
                         </p>
-                        <p className="text-sm text-gray-300">Long-term internship</p>
+                        <p className="text-sm text-gray-400">Long-term internship</p>
                       </div>
                     </div>
                   </div>
