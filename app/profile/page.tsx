@@ -329,17 +329,17 @@ export default function ProfilePage() {
             </h2>
             <div className="relative max-w-7xl mx-auto px-4">
               {/* Vertical timeline line */}
-              <div className="absolute left-[20%] h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-yellow-500"></div>
+              <div className="hidden md:block absolute left-[25%] lg:left-[20%] h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-yellow-500"></div>
               
               {/* Timeline items */}
-              <div className="space-y-16">
+              <div className="space-y-8 md:space-y-16">
                 {/* CyberAgent */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
-                  <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2025 - Present</div>
+                  <div className="hidden md:block absolute left-[25%] lg:left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="w-full md:w-[25%] lg:w-[20%] md:pr-8 pt-1 text-left md:text-right mb-4 md:mb-0">
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block whitespace-nowrap">2025 - Present</div>
                   </div>
-                  <div className="flex-1 pl-8">
+                  <div className="w-full md:flex-1 md:pl-8">
                     <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full relative border border-slate-700">
                       <div className="absolute -top-4 left-0 bg-slate-700 text-xs text-white px-3 py-1 rounded-full">Latest Position</div>
                       <h3 className="text-xl font-bold mb-2">CyberAgent.inc</h3>
@@ -378,11 +378,11 @@ export default function ProfilePage() {
 
                 {/* hacomono */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
-                  <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.7 - 2025.3</div>
+                  <div className="hidden md:block absolute left-[25%] lg:left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="w-full md:w-[25%] lg:w-[20%] md:pr-8 pt-1 text-left md:text-right mb-4 md:mb-0">
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block whitespace-nowrap">2024.7 - 2025.3</div>
                   </div>
-                  <div className="flex-1 pl-8">
+                  <div className="w-full md:flex-1 md:pl-8">
                     <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">hacomono.inc</h3>
                       <p className="text-gray-400 text-sm mb-4">
@@ -401,11 +401,11 @@ export default function ProfilePage() {
 
                 {/* Nobest */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
-                  <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2024.3 - 2024.5</div>
+                  <div className="hidden md:block absolute left-[25%] lg:left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="w-full md:w-[25%] lg:w-[20%] md:pr-8 pt-1 text-left md:text-right mb-4 md:mb-0">
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block whitespace-nowrap">2024.3 - 2024.5</div>
                   </div>
-                  <div className="flex-1 pl-8">
+                  <div className="w-full md:flex-1 md:pl-8">
                     <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">Nobest.inc</h3>
                       <p className="text-gray-400 text-sm mb-4">
@@ -424,11 +424,11 @@ export default function ProfilePage() {
 
                 {/* CodeComplete */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
-                  <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2023.7 - 2024.1</div>
+                  <div className="hidden md:block absolute left-[25%] lg:left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="w-full md:w-[25%] lg:w-[20%] md:pr-8 pt-1 text-left md:text-right mb-4 md:mb-0">
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block whitespace-nowrap">2023.7 - 2024.1</div>
                   </div>
-                  <div className="flex-1 pl-8">
+                  <div className="w-full md:flex-1 md:pl-8">
                     <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">CodeComplete.inc</h3>
                       <p className="text-gray-400 text-sm mb-4">
@@ -447,11 +447,11 @@ export default function ProfilePage() {
 
                 {/* EISHIN */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="absolute left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
-                  <div className="w-[20%] pr-8 pt-1 text-right">
-                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block">2022.2 - 2024.6</div>
+                  <div className="hidden md:block absolute left-[25%] lg:left-[20%] w-6 h-6 bg-slate-600 rounded-full transform -translate-x-1/2 border-4 border-black z-10"></div>
+                  <div className="w-full md:w-[25%] lg:w-[20%] md:pr-8 pt-1 text-left md:text-right mb-4 md:mb-0">
+                    <div className="bg-slate-700 text-white px-4 py-1 rounded-full text-sm font-bold inline-block whitespace-nowrap">2022.2 - 2024.6</div>
                   </div>
-                  <div className="flex-1 pl-8">
+                  <div className="w-full md:flex-1 md:pl-8">
                     <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-6 rounded-lg shadow-xl w-full border border-slate-700">
                       <h3 className="text-xl font-bold mb-2">EISHIN.inc</h3>
                       <p className="text-gray-400 text-sm mb-4">
