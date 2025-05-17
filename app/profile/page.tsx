@@ -65,7 +65,7 @@ export default function ProfilePage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Age</p>
-                    <p className="font-bold text-lg">22</p>
+                    <p className="font-bold text-lg">23</p>
                   </div>
                 </div>
 
